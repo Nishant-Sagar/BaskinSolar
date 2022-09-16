@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #d5d360;
+    --primary: #32C36C;
     --light: #F6F7F8;
     --dark: #1A2A36;
 }
@@ -557,12 +557,15 @@
 }
 
 .footer .btn.btn-link:hover {
-    color: #FFFFFF;
+    color: #32C36C;
     letter-spacing: 1px;
     box-shadow: none;
 }
 
 .footer .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 25px 0;
     border-top: 1px solid rgba(256, 256, 256, .1);
 }

@@ -1,0 +1,113 @@
+{% extends 'baskin/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="main">
+    <div class="container-form">
+        <div class="signup-content">
+            <div class="signup-img">
+                <img src="{% static 'img/form-img-2.jpg' %}" alt="">
+            </div>
+            <div class="signup-form">
+                <form method="POST" class="register-form" id="register-form">
+                    {% csrf_token %}
+                    <h2>Registration form</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name of Homeowner :</label>
+                            <input type="text" name="name" id="name" placeholder="Name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Roof Age :</label>
+                            <input type="number" name="age" id="age" placeholder="Roof Age" required />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email ID :</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone :</label>
+                        <input type="number" name="phone" id="phone" placeholder="Phone" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Full Home Address :</label>
+                        <input type="text" name="address" id="address" placeholder="Address" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="bill">Average Monthly Electric Bill Costs :</label>
+                        <input type="number" name="bill" id="bill" placeholder="$" required />
+                    </div>
+                    <div class="form-radio">
+                        <label for="HOA" class="radio-label">Do you have HOA?</label>
+                        <div class="form-radio-item">
+                            <input type="radio" name="HOA" id="HOA_YES" checked>
+                            <label for="HOA_YES">Yes</label>
+                            <span class="check"></span>
+                        </div>
+                        <div class="form-radio-item">
+                            <input type="radio" name="HOA" id="HOA_NO">
+                            <label for="HOA_NO">No</label>
+                            <span class="check"></span>
+                        </div>
+                    </div>
+                    <div class="form-radio">
+                        <label for="battery" class="radio-label">Would you also need a battery? </label>
+                        <div class="form-radio-item">
+                            <input type="radio" name="battery" id="Battery_YES" checked>
+                            <label for="Battery_YES">Yes</label>
+                            <span class="check"></span>
+                        </div>
+                        <div class="form-radio-item">
+                            <input type="radio" name="battery" id="Battery_NO">
+                            <label for="Battery_NO">No</label>
+                            <span class="check"></span>
+                        </div>
+                    </div>
+                    <div class="form-radio">
+                        <label for="foundation" class="radio-label">Is your home on concrete foundation?</label>
+                        <div class="form-radio-item">
+                            <input type="radio" name="foundation" id="foundation_YES" checked>
+                            <label for="foundation_YES">Yes</label>
+                            <span class="check"></span>
+                        </div>
+                        <div class="form-radio-item">
+                            <input type="radio" name="foundation" id="foundation_NO">
+                            <label for="foundation_NO">No</label>
+                            <span class="check"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Roof Type :</label>
+                        <div class="form-select">
+                            <select name="course" id="course">
+                                <option value="">Select here</option>
+                                <option value="Shingle">Comp Shingle</option>
+                                <option value="Concrete">Concrete</option>
+                                <option value="Metal">Metal</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="Clay">Clay</option>
+                            </select>
+                            <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Your Availability :</label>
+                        <input type="datetime-local" name="availability" id="availability" placeholder="Select Time"
+                            required />
+                    </div>
+                    <div class="form-group">
+                        <label for="uplaod">Upload your bill :</label>
+                        <input type="file" name="uplaod" id="uplaod" required />
+                    </div>
+                    <div class="form-submit">
+                        <input type="reset" value="Reset All" class="submit" name="reset" id="reset" />
+                        <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}
