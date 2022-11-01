@@ -96,3 +96,9 @@
     
 })(jQuery);
 
+if(document.getElementById('HOA_YES').checked == true) {   
+    document.write("HOA radio button is selected");
+    console.log('off')   
+} else {  
+    document.write("HOA radio button is not selected");   
+}  

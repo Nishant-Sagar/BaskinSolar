@@ -12,7 +12,8 @@
     --bs-red: #dc3545;
     --bs-orange: #fd7e14;
     --bs-yellow: #ffc107;
-    --bs-green: #198754;
+    /* --bs-green: #198754; */
+    --bs-green: #87CEEB;
     --bs-teal: #20c997;
     --bs-cyan: #0dcaf0;
     --bs-white: #fff;
@@ -2240,7 +2241,7 @@ progress {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     appearance: none;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 }
 
@@ -10728,7 +10729,7 @@ fieldset:disabled .btn {
 
     .px-lg-5 {
         padding-right: 3rem !important;
-        padding-left: 3rem !important
+        padding-left: 0rem !important
     }
 
     .py-lg-0 {

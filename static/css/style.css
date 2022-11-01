@@ -1,6 +1,7 @@
 /********** Template CSS **********/
 :root {
-    --primary: #32C36C;
+    /* --primary: #32C36C; */
+    --primary: #87CEEB;
     --light: #F6F7F8;
     --dark: #1A2A36;
 }
@@ -212,7 +213,7 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/commercial-head.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -557,7 +558,8 @@
 }
 
 .footer .btn.btn-link:hover {
-    color: #32C36C;
+    /* color: #32C36C; */
+    color: #87CEEB;
     letter-spacing: 1px;
     box-shadow: none;
 }
@@ -576,4 +578,29 @@
 
 .footer .copyright a:hover {
     color: var(--primary);
+}
+
+#cls{
+    color: rgb(53, 50, 50);
+    padding-bottom: 12px;
+    text-align: justify;
+}
+
+#que{
+    padding-bottom: 0px;
+}
+
+#logo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 30px;
+}
+#logo-img img{
+    height: 75px;
+    margin: 0px -6px;
+}
+
+#main-btn{
+    padding-left: 40px;
 }

@@ -9,7 +9,7 @@
                 <img src="{% static 'img/form-img-2.jpg' %}" alt="">
             </div>
             <div class="signup-form">
-                <form method="POST" class="register-form" id="register-form">
+                <form action="form" method="POST" class="register-form" id="register-form">
                     {% csrf_token %}
                     <h2>Registration form</h2>
                     <div class="form-row">
@@ -19,7 +19,7 @@
                         </div>
                         <div class="form-group">
                             <label for="age">Roof Age :</label>
-                            <input type="number" name="age" id="age" placeholder="Roof Age" required />
+                            <input type="number" name="roof_age" id="age" placeholder="Roof Age" required />
                         </div>
                     </div>
                     <div class="form-group">
@@ -36,17 +36,17 @@
                     </div>
                     <div class="form-group">
                         <label for="bill">Average Monthly Electric Bill Costs :</label>
-                        <input type="number" name="bill" id="bill" placeholder="$" required />
+                        <input type="number" name="monthly_bill" id="bill" placeholder="$" required />
                     </div>
                     <div class="form-radio">
                         <label for="HOA" class="radio-label">Do you have HOA?</label>
                         <div class="form-radio-item">
-                            <input type="radio" name="HOA" id="HOA_YES" checked>
+                            <input type="radio" name="HOA" id="HOA_YES" >
                             <label for="HOA_YES">Yes</label>
                             <span class="check"></span>
                         </div>
                         <div class="form-radio-item">
-                            <input type="radio" name="HOA" id="HOA_NO">
+                            <input type="radio" name="HOA" id="HOA_NO" >
                             <label for="HOA_NO">No</label>
                             <span class="check"></span>
                         </div>
@@ -54,7 +54,7 @@
                     <div class="form-radio">
                         <label for="battery" class="radio-label">Would you also need a battery? </label>
                         <div class="form-radio-item">
-                            <input type="radio" name="battery" id="Battery_YES" checked>
+                            <input type="radio" name="battery" id="Battery_YES" >
                             <label for="Battery_YES">Yes</label>
                             <span class="check"></span>
                         </div>
@@ -67,7 +67,7 @@
                     <div class="form-radio">
                         <label for="foundation" class="radio-label">Is your home on concrete foundation?</label>
                         <div class="form-radio-item">
-                            <input type="radio" name="foundation" id="foundation_YES" checked>
+                            <input type="radio" name="foundation" id="foundation_YES" >
                             <label for="foundation_YES">Yes</label>
                             <span class="check"></span>
                         </div>
@@ -80,7 +80,7 @@
                     <div class="form-group">
                         <label for="course">Roof Type :</label>
                         <div class="form-select">
-                            <select name="course" id="course">
+                            <select name="roof_type" id="course">
                                 <option value="">Select here</option>
                                 <option value="Shingle">Comp Shingle</option>
                                 <option value="Concrete">Concrete</option>
@@ -98,7 +98,7 @@
                     </div>
                     <div class="form-group">
                         <label for="uplaod">Upload your bill :</label>
-                        <input type="file" name="uplaod" id="uplaod" required />
+                        <input type="file" name="bill" id="uplaod" required />
                     </div>
                     <div class="form-submit">
                         <input type="reset" value="Reset All" class="submit" name="reset" id="reset" />
@@ -110,4 +110,11 @@
     </div>
 
 </div>
+<script>
+    var k = document.getElementById('HOA_YES');
+    var l = document.getElementById('HOA_NO');
+    if(l.checked) k.checked = false;
+    if(k.checked) l.checked = false;
+
+</script>
 {% endblock content %}

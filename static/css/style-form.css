@@ -305,7 +305,7 @@ h2 {
   font-family: 'Montserrat';
   font-size: 20px;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
 }
 
 .clear {
@@ -392,27 +392,25 @@ label {
 }
 
 .radio-label {
-  padding-right: 115px;
+  padding-right: 40px;
 }
 
 label[for=HOA] {
-  padding-right: 210px;
+  padding-right: 185px;
   /* border: 2px solid red; */
 }
 
-label[for=foundation] {
-  padding-right: 68px;
-}
 
-.form-radio-item {
+/* .form-radio-item {
   position: relative;
   margin-right: 20px;
-}
+} */
 
 .form-radio-item label {
   font-weight: 500;
   font-size: 13px;
-  padding-left: 25px;
+  padding-left: 17px;
+  padding-right: 17px;
   position: relative;
   z-index: 9;
   display: block;
@@ -457,20 +455,20 @@ label[for=foundation] {
 
 input[type=radio] {
   position: absolute;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
-input[type=radio]:checked~.check {
+/* input[type=radio]:checked~.check {
   border: 1px solid #ff6801;
 }
 
 input[type=radio]:checked~.check::before {
   background: #ff6801;
-}
+} */
 
-.form-select {
+/* .form-select {
   position: relative;
-}
+} */
 
 select {
   appearance: none !important;
@@ -625,4 +623,19 @@ select {
   }
 }
 
+#heading{
+  padding-bottom: 30px;
+}
 /*# sourceMappingURL=style.css.map */
+
+/* .form-radio{
+  display: flex;
+  padding-right: 4px;
+} */
+
+label[for=hoa] {
+  padding-right: 163px;
+}
+label[for=battery] {
+  padding-right: 88px;
+}

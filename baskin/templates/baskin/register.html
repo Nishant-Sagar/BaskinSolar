@@ -1,0 +1,94 @@
+{% extends 'baskin/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="main">
+    <div class="container-form">
+        <div class="signup-content">
+            <div class="signup-img">
+                <img src="{% static 'img/form-img-2.jpg' %}" alt="">
+            </div>
+            <div class="signup-form">
+                <form method="POST" class="register-form" id="register-form" action="{% url 'register' %}" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <h2 id="heading">registration form</h2>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name :</label>
+                            {{form.name}}
+                        </div>
+                        <div class="form-group">
+                            <label for="father_name">Roof Age :</label>
+                            {{form.roof_age}}
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Email :</label>
+                        {{form.email}}
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Number :</label>
+                        {{form.phone}}
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address :</label>
+                        {{form.address}}
+                    </div>
+                    <div class="form-group">
+                        <label for="monthly_bill">Monthly Bill :</label>
+                        {{form.monthly_bill}}
+                    </div>
+                    <div class="form-radio">
+                        <label for="hoa" class="radio-label" id="form-hoa">Do you have an HOA? </label>
+                        {% for radio in form.HOA %}
+                        <div class="form-radio-item">
+                            <label for="{{ radio.id_for_label }}"> {{ radio.tag }}  &emsp; {{ radio.choice_label }} </label>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+
+                    <div class="form-radio">
+                        <label for="battery" class="radio-label" , id="form-battery">Would you also need a battery?
+                        </label>
+                        {% for radio in form.battery %}
+                        <div class="form-radio-item">
+                            <label for="{{ radio.id_for_label }}">{{ radio.tag }}  &emsp;  {{ radio.choice_label }}</label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <div class="form-radio">
+                        <label for="gender" class="radio-label" , id="foundation">Is your home on concrete foundation?
+                        </label>
+                        {% for radio in form.foundation %}
+                        <div class="form-radio-item">
+                            <label for="{{ radio.id_for_label }}">{{ radio.tag }}  &emsp; {{ radio.choice_label }}</label>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Roof Type :</label>
+                        {{form.roof_type}}
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Your Availability :</label>
+                        {{form.availability}}
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Upload your bill :</label>
+                        {{form.bill}}
+                    </div>
+
+                    <div class="form-submit">
+                        <input type="reset" value="Reset All" class="submit" name="reset" id="reset" />
+                        <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

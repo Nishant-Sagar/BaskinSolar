@@ -6,7 +6,7 @@
 <div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="owl-carousel header-carousel position-relative">
         <div class="owl-carousel-item position-relative" data-dot="<img src={% static 'img/carousel-1.jpg' %}>">
-            <img class="img-fluid" src="{% static 'img/carousel-1.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'img/carousel-9.jpg' %}" alt="">
             <div class="owl-carousel-inner">
                 <div class="container">
                     <div class="row justify-content-start">
@@ -16,15 +16,14 @@
                             <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor
                                 at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea
                                 elitr.</p>
-                            <a href="{% url 'form' %}" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read
-                                More</a>
+                            <a href="{% url 'register' %}" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Fill the Form</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="owl-carousel-item position-relative" data-dot="<img src={% static 'img/carousel-2.jpg' %}>">
-            <img class="img-fluid" src="{% static 'img/carousel-2.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'img/carousel-5.jpg' %}" alt="">
             <div class="owl-carousel-inner">
                 <div class="container">
                     <div class="row justify-content-start">
@@ -34,15 +33,14 @@
                             <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor
                                 at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea
                                 elitr.</p>
-                            <a href="{% url 'form' %}" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read
-                                More</a>
+                            <a href="{% url 'register' %}" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Fill the Form</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="owl-carousel-item position-relative" data-dot="<img src={% static 'img/carousel-3.jpg' %}>">
-            <img class="img-fluid" src="{% static 'img/carousel-3.jpg' %}" alt="">
+            <img class="img-fluid" src="{% static 'img/carousel-6.jpg' %}" alt="">
             <div class="owl-carousel-inner">
                 <div class="container">
                     <div class="row justify-content-start">
@@ -52,8 +50,7 @@
                             <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor
                                 at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea
                                 elitr.</p>
-                            <a href="{% url 'form' %}" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Read
-                                More</a>
+                            <a href="{% url 'register' %}" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Fill the Form</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +117,7 @@
         <div class="row g-0 mx-lg-0">
             <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/about.jpg' %}"
+                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/carousel-10.jpg' %}"
                         style="object-fit: cover;" alt="">
                 </div>
             </div>
@@ -130,16 +127,16 @@
                     <h1 class="mb-4">With Baskin Solar system you get</h1>
                     <!-- <p>Being self-sufficient and sustainable is an appealing concept which most American homeowners
                             would love the opportunity to achieve, but at what cost?</p> -->
-                    <p><i class="fa fa-check-circle text-primary me-3"></i>Expert honest advice with a genuine care
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>Expert honest advice with a genuine care
                         for its clients.</p>
-                    <p><i class="fa fa-check-circle text-primary me-3"></i>Realistic system performance and savings
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>Realistic system performance and savings
                         estimates.</p>
-                    <p><i class="fa fa-check-circle text-primary me-3"></i>Proven reliable and high performing
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>Proven reliable and high performing
                         products.</p>
-                    <p><i class="fa fa-check-circle text-primary me-3"></i>25-year life expectancy of panels.</p>
-                    <p><i class="fa fa-check-circle text-primary me-3"></i>System set up support.</p>
-                    <p><i class="fa fa-check-circle text-primary me-3"></i>Industry leading customer services.</p>
-                    <p><i class="fa fa-check-circle text-primary me-3"></i>Attention to detail with quality
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>25-year life expectancy of panels.</p>
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>System set up support.</p>
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>Industry leading customer services.</p>
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>Attention to detail with quality
                         workmanship and tidy conduit and internal cable runs
                         wherever possible.</p>
                     <!-- <p>*Subject to approval and energy retailer agreement.</p> -->
@@ -164,79 +161,81 @@
         <div class="row g-4">
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="{% static 'img/img-600x400-1.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/forHome.jpg' %}" alt="">
                     <div class="position-relative p-4 pt-0">
                         <div class="service-icon">
                             <i class="fa fa-solar-panel fa-3x"></i>
                         </div>
-                        <h4 class="mb-3">Solar Panels for Home</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <h4 class="mb-3">Solar for Home</h4>
+                        <p id="cls">Tired of paying high electric bills for your home? We can make you reduce these expenses.</p>
+                        <a class="small fw-medium" href="{% url 'residential' %}">Know How<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="{% static 'img/img-600x400-2.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/commercial-4.jpg' %}" alt="">
                     <div class="position-relative p-4 pt-0">
                         <div class="service-icon">
-                            <i class="fa fa-wind fa-3x"></i>
+                            <i class="fa fa-solar-panel fa-3x"></i>
                         </div>
-                        <h4 class="mb-3">Solar Panels for Business</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <h4 class="mb-3">Solar for Business</h4>
+                        <p id="cls">Wanna Solarize your Business? We could do this effortlessly for you.</p>
+                        <br>
+                        <a class="small fw-medium" href="{% url 'commercial' %}">know How<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="{% static 'img/img-600x400-3.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/carousel-11.jpg' %}" alt="">
                     <div class="position-relative p-4 pt-0">
                         <div class="service-icon">
-                            <i class="fa fa-lightbulb fa-3x"></i>
+                            <i class="fa fa-solar-panel fa-3x"></i>
                         </div>
-                        <h4 class="mb-3">Why Solar</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <h4 class="mb-3">Why Solar?</h4>
+                        <p id="cls">What’s all this Solar Hype about? You need to know this before you jump in to the Solar Bandwagon</p>
+                        <a class="small fw-medium" href="{% url 'whysolar' %}">Know More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="{% static 'img/img-600x400-3.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/contact-3.jpg' %}" alt="">
                     <div class="position-relative p-4 pt-0">
                         <div class="service-icon">
                             <i class="fa fa-lightbulb fa-3x"></i>
                         </div>
-                        <h4 class="mb-3">Why Solar</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <h4 class="mb-3">Contact Us</h4>
+                        <p id="cls">Wanna know how we do this? Wanna know talk to us?.</p>
+                        <a class="small fw-medium" href="{% url 'contact' %}">Learn more<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="{% static 'img/img-600x400-3.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/roofing.jpg' %}" alt="">
                     <div class="position-relative p-4 pt-0">
                         <div class="service-icon">
                             <i class="fa fa-lightbulb fa-3x"></i>
                         </div>
-                        <h4 class="mb-3">Why Solar</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <h4 class="mb-3">Roofing</h4>
+                        <p id="cls"> Curious to know about what we do here at BaskinSolar?</p>
+                        <!-- <br> -->
+                        <a class="small fw-medium" href="{% url 'services' %}">Know More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="{% static 'img/img-600x400-3.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/contact-1.jpg' %}" alt="">
                     <div class="position-relative p-4 pt-0">
                         <div class="service-icon">
                             <i class="fa fa-lightbulb fa-3x"></i>
                         </div>
-                        <h4 class="mb-3">Why Solar</h4>
-                        <p>Stet stet justo dolor sed duo. Ut clita sea sit ipsum diam lorem diam.</p>
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
+                        <h4 class="mb-3">FAQ</h4>
+                        <p id="cls">We already have the most asked questions answered for you. </p>
+                        <a class="small fw-medium" href="{% url 'faq' %}">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -308,7 +307,7 @@
             </div>
             <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/feature.jpg' %}"
+                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/carousel-9.jpg' %}"
                         style="object-fit: cover;" alt="">
                 </div>
             </div>

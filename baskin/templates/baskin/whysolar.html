@@ -1,0 +1,98 @@
+{% extends 'baskin/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid page-header py-5 mb-5">
+    <div class="container py-5">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Why Solar?</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item text-white active" aria-current="page">Why Solar</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<!-- About Start -->
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/carousel-12.jpg' %}"
+                        style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+
+                <div class="p-lg-5 pe-lg-0" id="paragraph-content">
+                    <h1 class="text-primary">Why Solar?</h1>
+                    <!-- <h1 class="mb-4">With Baskin Solar system you get</h1> -->
+                    <h3>What’s all this Solar Hype about? Wanna know more?</h3>
+                    <hr>
+                    <h6 class="text-primary">Ditch your power Bills:</h6>
+
+                    <p id="cls">None of us like to spend our hard-earned money on power bills. We would any day prefer
+                        using this money to go on a family holiday and spend quality time with our loved ones. So
+                        it&#39;s
+                        never a bad idea to take a free assessment to understand what you could achieve with
+                        Baskin Solar.</p>
+
+                    <h6 class="text-primary">Never feel guilty about using the Air Conditioner:</h6>
+                    <p id="cls">The hot summers in Texas often compel us to use the Air Conditioner for hours together and
+                        end up leaving us super guilty for irresponsible power consumption. Installing a solar system
+                        onto your roof and knowing that it isn’t costing you a cent, would definitely wash off this
+                        guilt
+                        and allow you to use your AC as you wish.</p>
+
+                    <h6 class="text-primary">Enjoy Government Rebate:</h6>
+                    <p id="cls">The larger the system you install, the higher the rebate, and the overall value for your
+                        money. Now is when you can judiciously make the most of your investment.</p>
+
+                    <h6 class="text-primary">Sell Power to the Grid and Make Some Cash</h6>
+                    <p id="cls">If you are fortunate enough to have a substantial amount of roof space, then it would
+                        produce more energy than you utilize. This excess energy could be fed back into the power
+                        grid and your energy retailer would purchase it from you*. This system wouldn&#39;t just wipe
+                        away your power bill but in fact, also act as a passive source of income for you.</p>
+
+                    <h6 class="text-primary">Charge your Electric Vehicle :</h6>
+                    <p id="cls">It is of no surprise that Electric Vehicles are the future. Instead of depending on the grid to
+                        charge your vehicle, it would be a better idea to let your very own solar system do the job for
+                        you .</p>
+
+                    <h6 class="text-primary">Do your bit in crafting a sustainable Future:</h6>
+                    <p id="cls">We all know that our excessive use of conventional energy sources has resulted in Climate
+                        Change and is foreseen to be a huge threat to humanity. Despite knowing this fact, why
+                        aren’t we moving towards solar? This is primarily because of the profit-hungry Solar Thugs
+                        who have deceived the customers by installing low-quality underperforming equipment which
+                        is unsafe and not recommended. This is why many customers are reluctant to go Solar.
+                        We all know that our excessive use of conventional energy sources has resulted in Climate
+                        Change and is foreseen to be a huge threat to humanity. Despite knowing this fact, why
+                        aren’t we moving towards solar? This is primarily because of the profit-hungry Solar Thugs
+                        who have deceived the customers by installing low-quality underperforming equipment which
+                        is unsafe and not recommended. This is why many customers are reluctant to go Solar.</p>
+                    <p id="cls">We at BaskinSolar emphasize customer satisfaction and strive to provide a seamless solar
+                        experience. We believe in bringing value to our customers and making them fall in love with
+                        Solar.</p>
+
+                    <h6 class="text-primary">Makes you feel good about Yourself:</h6>
+                    <p id="cls">Makes you feel good about Yourself:
+                        Choosing the right Solar System for your Home or Business with the help of experts from
+                        Baskin Solar would help you breathe a sigh of relief and leave you extremely satisfied with
+                        your choice. That being said, Solar is definitely not an off-the-shelf, one size fits all
+                        purchase.
+                        Experts at Baskin Solar tailor and design the system accordingly in order to make it an
+                        incredible buy and minimize miscellaneous expenses for our customers.</p>
+
+                </div>
+                <div id="main-btn">
+                    <a href="{% url 'register' %}"
+                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Fill the Form</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+{% endblock content %}

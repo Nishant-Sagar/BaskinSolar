@@ -1,0 +1,75 @@
+{% extends 'baskin/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid page-header py-5 mb-5">
+    <div class="container py-5">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Solar For Business</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
+                <!-- <li class="breadcrumb-item"><a class="text-white" href="#">Services</a></li> -->
+                <li class="breadcrumb-item text-white active" aria-current="page">Solar For Business</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+
+<!-- About Start -->
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/commercial-head2.jpg' %}"
+                        style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+
+                <div class="p-lg-5 pe-lg-0" id="paragraph-content">
+                    <h1 class="text-primary">Solar For Business</h1>
+                    <!-- <h1 class="mb-4">With Baskin Solar system you get</h1> -->
+                    <h3>Wanna Solarize your Business?</h3>
+                    <hr>
+                    <p id="cls">Conventionally, it is believed that joining the Solar Bandwagon is something that might
+                        hurt
+                        the Company’s Pocket only to put you on the clean energy pedestal. However, it is time to
+                        change the narrative with Baskin Solar.</p>
+
+                    <p id="cls">By investing your company’s dead money into Solar, you could earn a Return on Investment
+                        of up to 20-30% per annum. Eventually, in a span of 3-4 years when you have broken even,
+                        your very own renewable energy station would generously provide clean and free power for
+                        years to come.</p>
+
+                    <p id="cls">We at Baskin Solar, follow a pragmatic approach and educate you on how you could
+                        generate a positive cash flow for your business using solar and help you save on energy
+                        costs immediately.</p>
+
+                    <h6>Commercial Solar Power would help you:</h6>
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>Attain upfront Government Rebates.
+                    </p>
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>Attain upfront Government Rebates
+                    </p>
+                    <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i> Evidently, give you a handsome
+                        Return on
+                        Investment and consistent savings.</p>
+                    <hr>
+                    <p id="cls">If you’re a company that wants to win the battle against rising energy prices and wants
+                        to
+                        become energy independent, then fill out the form below and see your company transform
+                        into a clean &amp; green company within no time.</p>
+                    <!-- <a href="{% url 'register' %}" class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Fill the Form</a> -->
+                </div>
+                <div id="main-btn">
+                    <a href="{% url 'register' %}"
+                        class="btn btn-primary rounded-pill py-3 px-5 animated slideInLeft">Fill the Form</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+{% endblock content %}

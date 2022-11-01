@@ -85,20 +85,26 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="{% url 'home' %}" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+        <div id="logo-img">
+            <a href="#" class="pull"><img src="{% static 'img/final-logo4.svg' %}"></a>
+            <a href="{% url 'home' %}" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+                <!-- <h2 class="m-0 text-primary">Baskin Solar</h2> -->
+            </a>
+        </div>
+        <!-- <a href="{% url 'home' %}" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
             <h2 class="m-0 text-primary">Baskin Solar</h2>
-        </a>
+        </a> -->
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">Residential</a>
-                <a href="about.html" class="nav-item nav-link">Commercial</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <a href="{% url 'form' %}" class="nav-item nav-link">Contact</a>
-                <a href="contact.html" class="nav-item nav-link">FAQs</a>
+                <a href="{% url 'residential' %}" class="nav-item nav-link">Residential</a>
+                <a href="{% url 'commercial' %}" class="nav-item nav-link">Commercial</a>
+                <a href="{% url 'services' %}" class="nav-item nav-link">Roofing</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
+                <a href="{% url 'faq' %}" class="nav-item nav-link">FAQ</a>
             </div>
         </div>
     </nav>
@@ -135,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <!-- <div class="container">
             <div class="copyright">
                 <div class="col-md-6  text-center text-md-start">
                     Distributed <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
@@ -144,7 +150,7 @@
                     Designed By <a href="https://htmlcodex.com">HTML Codex</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     </div>
     <!-- Footer End -->
