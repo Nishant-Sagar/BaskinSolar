@@ -1,125 +1,50 @@
 {% extends 'baskin/base.html' %}
 {% load static %}
 {% block content %}
-<!-- Page Header Start -->
-<div class="container-fluid page-header py-5 mb-5">
-    <div class="container py-5">
-        <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
-        <nav aria-label="breadcrumb animated slideInDown">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a class="text-white" href="{% url 'home' %}">Home</a></li>
-                <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
-            </ol>
-        </nav>
-    </div>
-</div>
-<!-- Page Header End -->
 
-<!-- Team Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h1 class="text-primary">Frequently Asked Questions</h1>
-            <!-- <h1 class="mb-4">Experienced Team Members</h1> -->
+
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/final-logo-6.svg' %}"
+                        style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+
+                <div class="p-lg-5 pe-lg-0" id="paragraph-content">
+                    <h1 class="text-primary">Core Services </h1>
+                    <h4>(Residential & Commercial):</h4>
+                    <div class="services-heading">
+                        <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>SOLAR</p>
+                        <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>ROOFING</p>
+                        <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>REMODELLING</p>
+                        <p id="cls"><i class="fa fa-check-circle text-primary me-3"></i>WATER TREATMENT</p>
+                    </div>
+
+                    <div class="services-subheading">
+                        <ul>
+                            <li>
+                                <p id="cls">Softner Plant</p>
+                            </li>
+                            <li>
+                                <p id="cls">Reverse Osmosis System (RO System)</p>
+                            </li>
+                            <li>
+                                <p id="cls">Industrial Water Purification</p>
+                            </li>
+                            <li>
+                                <p id="cls">Water Filtration System</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <h2 id="que">Reliable Roofing services that can stand up to Houston’s Weather</h2>
-        <p id="cls">As a homeowner, putting a new roof on your home is one of the most significant investments
-            you will make and it&#39;s an important decision. There are hundreds of roofing companies in
-            Houston to choose from and working with the best roofing contractor Houston has to offer will
-            give you peace of mind knowing that you will get the best quality roof that fits your budget.</p>
-
-        <h2 id="que">When should you replace your roof?</h2>
-        <p id="cls">In the Houston Market, you might have a 25-year a 30-year roof or even a lifetime shingle, but
-            they normally won’t last as long as advertised. the number one reason for that is because the
-            Texas heat and humidity.</p>
-        <p id="cls">The Texas weather is extremely hot and will take away the life of the shingle.  Realistically a
-            roof in Houston will last on average about 15 to 20 years.  There are several factors that you
-            have to consider such as the type of shingle you use, the pitch of your roof, and the ventilation. 
-            If you have a roof that is more than 15 years old and have not got inspected in a while then we
-            can come out and give you a free diagnosis of your roof.  Give us a call or email us and we will
-            gladly answer any questions you might have!</p>
-
-        <h2 id="que">How do I know if I have roof problems?</h2>
-        <p id="cls">Look for collections of granules or mineral deposits in your gutters, downspouts, and
-            driveway for any evidence of possible further damage. If you find this type of evidence, contact
-            a professional roofer today, as your roof will likely require roof repair. Cracked, warped, or
-            missing shingles.</p>
-
-        <h2 id="que">Where are roofing problems most common?</h2>
-        <p id="cls">Roof leaks are probably the single most common roofing problems plaguing most homeowners.
-            The leaks could be a result of many roof issues, such as broken shingles. Mostly, you&#39;ll find
-            leaks near the chimney, around gutters, at flashing points, and close to vents or pipes.</p>
-
-        <h2 id="que">How do I know if my roof is leaking?</h2>
-        <p id="cls">Unsurprisingly, the most obvious way to know if my roof is leaking is to check for drippage.
-            Make sure to check the attic as your first port of call. If you notice a wet roof deck or can hear a
-            dripping sound in the walls of your home, it is likely that you have a leak</p>
-
-        <h2 id="que">Is it OK to put new shingles over old?</h2>
-        <p id="cls">While a repair job can often be more convenient and somewhat more cost-efficient, placing
-            new shingles over old ones is never a good idea. Whether repairing one section of roof, or a
-            replacing a whole one, it&#39;s always best to pull up the old shingles before putting down the new
-            ones.</p>
-
-        <h2 id="que">How long does it take to reshingle a roof?</h2>
-        <p id="cls">On average, your typical residential home in the United States will have an area of 1600 – 1700
-            square feet. In most cases, your average roof will be reshingled in a span of 2 – 3 days. A roof
-            with double the area that needs to be reshingled will usually take more than a week.</p>
-
-        <h2 id="que">What time of year is best for roof replacement?</h2>
-        <p id="cls">Fall. Fall is the universal go-to season for roof replacement. With spring&#39;s mild temperatures
-            and early summer&#39;s weather consistency, fall is commonly referred to as the best time of year to
-            replace your roof.</p>
-
-        <h2 id="que">Can I claim for leaking roof on insurance?</h2>
-        <p id="cls">Most home insurance providers will cover the cost of repairs if roof leaks are due to a sudden,
-            unexpected event, like storm damage or a falling tree. But you won&#39;t be covered for roof leaks
-            that are due to wear and tear.</p>
-
-        <h2 id="que">Why does my roof leak in heavy rain?</h2>
-        <p id="cls">Roof leaks that happen during heavy rains may indicate the end of the shingles&#39; life. Metal
-            corrosion. Cracks in metal and corrosion around fasteners can create enough space for water to
-            leak. Over time, expansion and contraction can loosen the seams in a metal roof.</p>
-
-        <h2 id="que">How long does a reroof last?</h2>
-        <p id="cls">For a standard 3-tab asphalt shingle roof, that&#39;s 25-years. As long as your roof has been
-            properly ventilated and installed you should get pretty close to that 25 years of roof life.</p>
-
-        <h2 id="que">Should I stay home during roof replacement?</h2>
-        <p id="cls">Should I stay home during a roof replacement? Speak to your chosen roofer about this before
-            they start work, but there is no reason you absolutely must leave the house. As long as you stay
-            inside, away from the gardens where there may be regular falling debris, you will be safe.</p>
-
-        <h2 id="que">Should I tell insurance about new roof?</h2>
-        <p id="cls">It&#39;s important to see every aspect of your roof&#39;s construction as an investment because your
-            roof is one of the most important shields between your family and the perils that could cause
-            damage. No matter how big or small your roof repair changes are, make sure to update your
-            insurance company as quickly as possible.</p>
-
-        <h2 id="que">What is the most common cause of roof leaks?</h2>
-        <p id="cls">Some of the most common roof leak causes include an aging roof, broken or missing
-            shingles, clogged gutters, and chimney damage. If these problems are neglected, it can be
-            disastrous for the structure of your home.</p>
-
-        <h2 id="que">Will a leaking roof collapse?</h2>
-        <p id="cls">If you are experiencing a roof leak, this is a sign that you have water pooling between your
-            ceiling and roof. This pooling water puts added weight and stress on your beams, drywall, and
-            insulation, causing sagging or drooping which could lead to a collapse.</p>
-
-        <h2 id="que">What color roof lasts the longest?</h2>
-        <p id="cls">Both light-colored and dark-colored shingles can last longer if given the necessary
-            maintenance. The only thing tested and proven about light-colored shingles is that they help us
-            keep the indoor temperature cooler in the hot summer season.</p>
-
-        <h2 id="que">Will my roof leak if some shingles blew off?</h2>
-        <p id="cls">Yes. If you don&#39;t replace the shingles that are missing, there is a 100% chance that your
-            roof will leak. You might not notice it at first, but water leaking into roof decking can
-            warp your roof, seep into your walls and spoil your attic insulation.</p>
-
     </div>
 </div>
-
-
-
 
 {% endblock content %}

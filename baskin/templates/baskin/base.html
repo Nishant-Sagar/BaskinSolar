@@ -58,15 +58,15 @@
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
                     <small>123 Street, New York, USA</small>
                 </div>
-                <div class="h-100 d-inline-flex align-items-center">
+                <!-- <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
                     <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
-                </div>
+                </div> -->
             </div>
             <div class="col-lg-5 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>+012 345 6789</small>
+                    <small>+1 832 620 1055</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center mx-n2">
                     <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary" href=""><i
@@ -102,9 +102,10 @@
                 <a href="{% url 'home' %}" class="nav-item nav-link active">Home</a>
                 <a href="{% url 'residential' %}" class="nav-item nav-link">Residential</a>
                 <a href="{% url 'commercial' %}" class="nav-item nav-link">Commercial</a>
-                <a href="{% url 'services' %}" class="nav-item nav-link">Roofing</a>
-                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
+                <a href="{% url 'services' %}" class="nav-item nav-link">Services</a>
+                <a href="{% url 'gogreen' %}" class="nav-item nav-link">Solar Process</a>
                 <a href="{% url 'faq' %}" class="nav-item nav-link">FAQ</a>
+                <a href="{% url 'contact' %}" class="nav-item nav-link">Contact Us</a>
             </div>
         </div>
     </nav>
@@ -118,9 +119,9 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <!-- <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p> -->
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+1 832 620 1055</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>hello@baskinsolar.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-light btn-social" href=""><i
                                 class="fab fa-twitter"></i></a>
@@ -134,10 +135,10 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">Residential</a>
-                    <a class="btn btn-link" href="">Commercial</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="{% url 'form' %}">Contact Us</a>
+                    <a class="btn btn-link" href="{% url 'residential' %}">Residential</a>
+                    <a class="btn btn-link" href="{% url 'commercial' %}">Commercial</a>
+                    <a class="btn btn-link" href="{% url 'services' %}">Our Services</a>
+                    <!-- <a class="btn btn-link" href="{% url 'form' %}">Contact Us</a> -->
                 </div>
             </div>
         </div>

@@ -38,7 +38,7 @@ class RegisterForm(forms.ModelForm):
     class Meta:
         model = Register
         # fields = "__all__"
-        fields = ['name', 'roof_age', 'email', 'phone', 'address', 'monthly_bill', 'HOA','battery', 'foundation','roof_type', 'availability','bill']
+        fields = ['name', 'roof_age', 'email', 'phone', 'address', 'monthly_bill', 'HOA','battery', 'foundation','roof_type', 'availability','bill', 'questions', 'meter_picture', 'company_name']
 
         widgets = {
                 'name': forms.TextInput(attrs={'class': 'form-control'}),

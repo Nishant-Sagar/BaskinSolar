@@ -15,7 +15,7 @@
 
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="name">Name :</label>
+                            <label for="name">Name of Home Owner:</label>
                             {{form.name}}
                         </div>
                         <div class="form-group">
@@ -36,11 +36,11 @@
                         {{form.address}}
                     </div>
                     <div class="form-group">
-                        <label for="monthly_bill">Monthly Bill :</label>
+                        <label for="monthly_bill">Average Monthly Bill :</label>
                         {{form.monthly_bill}}
                     </div>
                     <div class="form-radio">
-                        <label for="hoa" class="radio-label" id="form-hoa">Do you have an HOA? </label>
+                        <label for="hoa" class="radio-label" id="form-hoa">Do you have a HOA? </label>
                         {% for radio in form.HOA %}
                         <div class="form-radio-item">
                             <label for="{{ radio.id_for_label }}"> {{ radio.tag }}  &emsp; {{ radio.choice_label }} </label>
@@ -77,8 +77,20 @@
                         {{form.availability}}
                     </div>
                     <div class="form-group">
-                        <label for="address">Upload your bill :</label>
+                        <label for="address">Upload Your Bill :</label>
                         {{form.bill}}
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Upload a Picture of your Meter :</label>
+                        {{form.meter_picture}}
+                    </div>
+                    <div class="form-group">
+                        <label for="other-question">Name of your Current Energy Company :</label>
+                        {{form.company_name}}
+                    </div>
+                    <div class="form-group">
+                        <label for="other-question">Any Other Concern or Question Let Us Know :</label>
+                        {{form.questions}}
                     </div>
 
                     <div class="form-submit">

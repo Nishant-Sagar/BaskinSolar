@@ -15,6 +15,7 @@ urlpatterns = [
     path('residential', views.residential, name = 'residential'),
     path('whysolar', views.whysolar, name = 'whysolar'),
     path('register', views.register, name = 'register'),
+    path('gogreen', views.gogreen, name = 'gogreen'),
 
 ]
 # if settings.DEBUG:

@@ -50,6 +50,9 @@ class Register(models.Model):
     roof_type = models.CharField(max_length=20, choices=roof_choices, default='Comp Shingle')
     availability = models.DateTimeField()
     bill = models.FileField(upload_to='uploads/%d/%m/%y/')
+    meter_picture = models.FileField(upload_to='uploads/%d/%m/%y/')
+    company_name = models.CharField(max_length=200)
+    questions = models.CharField(max_length=800)
 
     class Meta:
         verbose_name = 'register'
