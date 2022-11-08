@@ -7,7 +7,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('', views.home, name = 'home'),
-    path('form', views.form, name = 'form'),
+    # path('form', views.form, name = 'form'),
     path('faq', views.faq, name = 'faq'),
     path('contact', views.contact, name = 'contact'),
     path('services', views.services, name = 'services'),
@@ -17,10 +17,12 @@ urlpatterns = [
     path('register', views.register, name = 'register'),
     path('gogreen', views.gogreen, name = 'gogreen'),
 
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+# urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 # if settings.DEBUG:
 #     urlpatterns += static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)
 #     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
 
