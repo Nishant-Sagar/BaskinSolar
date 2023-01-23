@@ -2422,6 +2422,7 @@ textarea.form-control-lg {
     height: 1.5em;
     border-radius: 8px
 }
+
 /* 
 .form-select {
     display: block;
@@ -12560,4 +12561,25 @@ fieldset:disabled .btn {
     .d-print-none {
         display: none !important
     }
+}
+
+.sam-pic {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    /* position: relative; */
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: auto;
+}
+
+.sam-pic img {
+    width: auto;
+    /* height: 100%; */
+    margin-left: -50px;
+    margin: auto;
+    padding-top: 20%;
 }
