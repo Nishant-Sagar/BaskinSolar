@@ -3,12 +3,14 @@
 {% block content %}
 
 
-<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+<!-- <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
     <div class="container about px-lg-0">
         <div class="row g-0 mx-lg-0">
             <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="{% static 'img/final-logo-6.svg' %}"
+                <div class="position-relative h-100"> -->
+<!-- <img class="position-absolute img-fluid w-100 h-100" id="samImage" src="{% static 'img/sam.JPG' %}"
+                        style="object-fit: cover;" alt=""> -->
+<!-- <img class="sam-pic" id="samImage" src="{% static 'img/sam1.jpg' %}"
                         style="object-fit: cover;" alt="">
                 </div>
             </div>
@@ -24,8 +26,26 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
+<div class="contact">
+    <div class="picture-of-sam">
+        <img class="sam-pic" id="samImage" src="{% static 'img/sam.JPG' %}" style="object-fit: cover;" alt="">
+    </div>
 
+    </div>
+    <div class="contact-picture">
+        <h1 class="text-primary">SAM KASSAM</h1>
+        <p class="mb-2" id="cls"><i class="fa fa-phone-alt me-3"></i>(832) 997 6378 / (832) 620 1055</p>
+        <p class="mb-2" id="cls"><i class="fa fa-envelope me-3"></i>hello@baskinsolar.com</p>
+    </div>
+
+    <div class="p-lg-5 pe-lg-0" id="paragraph-content-1">
+        <!-- <h1 class="text-primary">SAM KASSAM</h1> -->
+        <!-- <p class="mb-2" id="cls"><i class="fa fa-phone-alt me-3"></i>(832) 997 6378 / (832) 620 1055</p> -->
+        <!-- <p class="mb-2" id="cls"><i class="fa fa-phone-alt me-3"></i>(832) 620 1055</p> -->
+        <!-- <p class="mb-2" id="cls"><i class="fa fa-envelope me-3"></i>hello@baskinsolar.com</p> -->
+    </div>
+</div>
 
 
 {% endblock content %}
