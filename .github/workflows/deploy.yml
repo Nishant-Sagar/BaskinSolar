@@ -21,7 +21,7 @@ jobs:
     - name: Backup old artifacts
       run: |
         mkdir -p backups
-        mv /var/www/project/BaskinSolar /var/www/project/BaskinSolar.bak$(date +%Y%m%d%H%M%S)
+        ls
     - name: Copy code to DigitalOcean droplet
       uses: appleboy/scp-action@master
       with:
