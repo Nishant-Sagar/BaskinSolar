@@ -16,7 +16,7 @@ jobs:
       with:
         host: ${{ secrets.DROPLET_IP }}
         username: ${{ secrets.DROPLET_USER }}
-        password: ${{ secrets.PASSWORD }}
+        password: 1@Nishant
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /var/www/
@@ -28,7 +28,7 @@ jobs:
       with:
         host: ${{ secrets.DROPLET_IP }}
         username: ${{ secrets.DROPLET_USER }}
-        password: ${{ secrets.PASSWORD }}
+        password: 1@Nishant
         source: .
         target: /var/www/project/BaskinSolar
     - name: Execute scripts
@@ -36,7 +36,7 @@ jobs:
       with:
         host: ${{ secrets.DROPLET_IP }}
         username: ${{ secrets.DROPLET_USER }}
-        password: ${{ secrets.PASSWORD }}
+        password: 1@Nishant
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /var/www/project 
