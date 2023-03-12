@@ -28,8 +28,8 @@ jobs:
         username: ${{ secrets.DROPLET_USER }}
         password: 1@Nishant
         source: .
-        target: /var/www/project
-    - name: SSH into DigitalOcean droplet
+        target: /var/www/project/BaskinSolar
+    - name: Execute scripts
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.DROPLET_IP }}
