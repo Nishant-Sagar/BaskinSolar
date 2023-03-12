@@ -19,7 +19,9 @@ jobs:
         password: 1@Nishant
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
+          cd /var/www/
           mkdir -p backups
+          mv /var/www/project/  /var/www/backups/backuphtml.bak$(date +%Y%m%d%H%M%S)
           ls
     - name: Copy code to DigitalOcean droplet
       uses: appleboy/scp-action@master
